@@ -39,3 +39,10 @@ get-jupyter-token: ## Get the Jupyter token from the docker logs
 .PHONY: print
 print: ## Print a hello message
 	@echo "hello from Makefile"
+
+.PHONY: generate-data
+generate-data: ## Generate data for the pgsql database
+	@poetry shell && python3 generate_data/company_factory_data.py
+	@poetry shell && python3 generate_data/sensor_factory_data.py
+	@cp generate_data/output/factories.sql.dump esme_postgresql/data/factories.sql.dump
+	@cp generate_data/output/sensors.json esme_mongodb/esme_data/sensors.json

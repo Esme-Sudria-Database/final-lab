@@ -14,8 +14,5 @@ import_collection() {
         --file "/esme_data/$file"
 }
 
-# Import products
-import_collection "ecommerce" "products" "products.json"
-
-# Import prescriptions
-import_collection "hospital" "prescriptions" "prescriptions.json"
+# Import sensors
+import_collection "sensors" "sensors" "sensors.json"

@@ -17,3 +17,9 @@
 - `make get-jupyter-token`
 
 > You need the token to access the Jupyter notebook
+
+
+
+---------
+ADITIONAL PART :
+to generate pgsql data, use `poetry shell` and then `python3 generate_data/company_factory_data.py`
