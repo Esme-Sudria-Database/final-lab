@@ -17,19 +17,23 @@ help: ## Show this help message
 ##@ Docker commands
 .PHONY: start
 start: ## Start all containers
-	docker compose up -d
+	@docker compose up -d
 
 .PHONY: stop
 stop: ## Stop all containers
-	docker compose down
+	@docker compose down
 
 .PHONY: populate-pg
 populate-pg: ## Populate the PostgreSQL database
-	docker compose exec -it esme_postgresql /data/load_dumps.sh
+	@docker compose exec -it esme_postgresql /data/load_dumps.sh
 
 .PHONY: populate-mongo
 populate-mongo: ## Populate the MongoDB database
-	docker compose exec -it esme_mongodb /esme_data/mongoimport.sh
+	@docker compose exec -it esme_mongodb /esme_data/mongoimport.sh
+
+.PHONY: get-jupyter-token
+get-jupyter-token: ## Get the Jupyter token from the docker logs
+	@docker compose logs esme_pyspark | grep "token=" | cut -d'=' -f2 | head -n 1
 
 ##@ Utility commands
 .PHONY: print

@@ -12,3 +12,8 @@
 
 ### Stop the lab
 - `make stop`
+
+### Get the Jupyter token
+- `make get-jupyter-token`
+
+> You need the token to access the Jupyter notebook

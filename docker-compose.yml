@@ -40,3 +40,10 @@ services:
       - MONGOCLIENT_DEFAULT_CONNECTION_URL=mongodb://esme_mongodb:27017/
     volumes:
       - /data/db
+
+  esme_pyspark:
+    build:
+      context: ./esme_pyspark
+    ports:
+      - "8888:8888"
+      - "4040:4040"
