@@ -1,22 +1,327 @@
 Nom:
 Prénom:
 
-Vous trouverez ci-dessous les questions du partiel. Veuillez écrire votre réponse sous la question
+Vous trouverez ci-dessous les questions du partiel. Veuillez écrire votre réponse sous la question.
+Vous avez le droit d'utiliser le cours, les réponses des td/tp précédents, internet, les ia generatives.
+
+Si vous rencontrez une ambiguité, veuillez le préciser dans votre réponse et expliquer les hypothèses que vous avez faites pour répondre à la question.
+
+Let's go !
 
 + Partie Théorique (50 points)
 
 ++ Modèle relationnel
-    - Définir l'acronyme ACID
-    - Expliquer OLAP et OLTP
+    - Définir l'acronyme ACID.
+
+
+
+
+
+
+    - Expliquer OLAP et OLTP.
+
+
+
+
+
+
+
+
 
 ++ NoSQL
     - Dans quel cadre le NoSQL est-il plus intéressant que le relationnel ?
+
+
+
+
+
+
+
+
     - Qu’est-ce que le NoSQL impose à prendre en compte qu’un SGBD fait par défaut ?
+
+
+
+
+
+
+
+
 
 ++ Spark / Hadoop
     - Pourquoi Hadoop a été une révolution dans le paysage de l’IT ?
+
+
+
+
+
+
+
+
     - Expliquer avec vos mots l’approche Map Reduce.
+
+
+
+
+
+
+
+
     - Expliquer la différence entre Spark et Hadoop.
 
 
+
+
+
+
+
+
+
+
+
+
+
+++ DevOps / MLOps
+    - Pourquoi faire du devops ?
+
+
+
+
+
+
+
+
+    - Quelles sont les différentes étapes du cycle DevOps ?
+
+
+
+
+
+
+
+
+
+
+    - Comment le rôle du devops est complémentaire avec le rôle du data ingénieur ?
+
+
+
+
+
+
+
+
+
+
+
+
+
+++ DBT
+    - Expliquer avec vos mots comment vous utiliseriez DBT au sein d’un projet.
+
+
+
+
+
+
+
+
+    - Comment le mettriez-vous en place ?
+
+
+
+
+
+
+
+
+
+++ Kafka
+    - A quoi sert Kafka ?
+
+
+
+
+
+
+
+
+
+    - De quoi est composé un message au sein de Kafka ?
+
+
+
+
+
+
+
+
+    - Sous quels formats kafka traite-t-il les messages ? (citez les 2 principaux)
+
+
+
+
+
+
+
+
+
+
+++ Delta
+    - Lister quatre avantages à utiliser Delta Lake par rapport à un format parquet. Expliquer.
+
+
+
+
+
+
+
+
+
+
+++ Sondage
+    - Quelle est votre perception du rôle de data engineer ?
+
+
+
+
+
+
+
+
+
 + Partie Pratique (50 points)
+
+
+++ SQL
+_Contexte_
+La base de données *factories* contient le résumé de production et de vente de plusieurs entreprises et de leurs usines respectives.
+Chaque entreprise possède plusieurs usines et chaque usine possède plusieurs lignes de production.
+Chaque usine fabrique un seul produit et chaque ligne de production fabrique une partie de ce produit.
+Il existe un rapport heure par heure de la vitesse de production des lignes de production (production_rate, produit/heure).
+Il existe aussi une table qui contient les prix du marché de vente de chaque produit jour par jour (prix en euros par produit).
+
+Astuce :  Utiliser des sous-requêtes ou les CTE  pour décomposer votre raisonnement.
+
+
+
+
+
+Question 1 :
+    Calculez le nombre de produit fabriqué pour chaque compagnies durant l’année 2024.
+    Astuce :  Utiliser des sous-requêtes ou  les CTE pour rechercher le rendement le plus bas d’une ligne de production pour définir la vitesse de production d’un produit et arrondir.
+
+
+
+
+
+
+
+
+
+
+
+----
+Question 2 :
+    Quel produit est le plus rentable pour les usines françaises durant l’année 2024 ?
+    Astuce :  Utiliser des sous-requêtes ou les CTE  pour calculer le chiffre d’affaire de chaque usine dans un premier temps.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----
+Question 3 :
+    Quelle compagnie a le pire rendement sur les engrenages (gear) durant le mois février ?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+++ MongoDB
+----
+Question 1 :
+    Récupérer le nombre de capteurs installé avant le 31 octobre 2024. ( utiliser la commande aggregate)
+
+
+
+
+
+
+
+
+
+
+
+----
+Question 2 :
+    Donner le nombre de capteur de qui ont eu leur date de calibration avant leurs date de maintenance.
+
+
+
+
+
+
+
+
+
+
+
+
+----
+Question 3 :
+    Donner la moyenne des capteurs de pression pour le mois de juillet.
+
+
+
+
+
+
+
+
+
+
+
+
+++ Spark
+    Calculer la moyenne de chaque capteur par jour. (Utiliser les fonctions de windowing proposées par Spark)
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fin du sujet.
+Des points seront enlevés pour les fichiers mal présentés.
+Envoyer ce fichier avec le nom `reponses.<votre nom>.<votre prenom>.txt` par email à
+    luc.marchand.pro@proton.me
+et
+    maxencetallon@gmail.com
+
+
+Bonne chance !

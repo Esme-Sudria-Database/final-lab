@@ -14,7 +14,6 @@ help: ## Show this help message
 	@echo "Utility commands:"
 	@echo "  print           Print a hello message"
 	@echo "  help            Show this help message"
-	@echo "  generate-data   Generate data for the pgsql database"
 	@echo ""
 
 

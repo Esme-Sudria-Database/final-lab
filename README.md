@@ -19,7 +19,8 @@
 > You need the token to access the Jupyter notebook
 
 
+# Comment répondre aux questions
 
----------
-ADITIONAL PART :
-to generate pgsql data, use `poetry shell` and then `python3 generate_data/company_factory_data.py`
+1. renommer le fichier `reponses.nom.prenom.txt` en `reponses.<votre nom>.<votre prenom>.txt`
+2. Répondre aux questions dans le fichier `reponses.<votre nom>.<votre prenom>.txt`
+3. Envoyer ce fichier par email à `luc.marchand.pro@proton.me` et `maxencetallon@gmail.com`
