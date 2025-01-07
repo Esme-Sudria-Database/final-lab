@@ -1,0 +1,22 @@
+Nom:
+Prénom:
+
+Vous trouverez ci-dessous les questions du partiel. Veuillez écrire votre réponse sous la question
+
++ Partie Théorique (50 points)
+
+++ Modèle relationnel
+    - Définir l'acronyme ACID
+    - Expliquer OLAP et OLTP
+
+++ NoSQL
+    - Dans quel cadre le NoSQL est-il plus intéressant que le relationnel ?
+    - Qu’est-ce que le NoSQL impose à prendre en compte qu’un SGBD fait par défaut ?
+
+++ Spark / Hadoop
+    - Pourquoi Hadoop a été une révolution dans le paysage de l’IT ?
+    - Expliquer avec vos mots l’approche Map Reduce.
+    - Expliquer la différence entre Spark et Hadoop.
+
+
++ Partie Pratique (50 points)

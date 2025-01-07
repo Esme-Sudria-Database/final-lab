@@ -4,7 +4,7 @@ set -e -x
 # Set default postgres user if not provided
 : "${POSTGRES_USER:=postgres}"
 
-databases=("factories")
+databases=("factories" "sensors")
 
 for database in "${databases[@]}"; do
   psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" <<-EOSQL

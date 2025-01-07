@@ -44,5 +44,7 @@ print: ## Print a hello message
 generate-data: ## Generate data for the pgsql database
 	@poetry shell && python3 generate_data/company_factory_data.py
 	@poetry shell && python3 generate_data/sensor_factory_data.py
+	@poetry shell && python3 generate_data/spark_sensors_data.py
 	@cp generate_data/output/factories.sql.dump esme_postgresql/data/factories.sql.dump
 	@cp generate_data/output/sensors.json esme_mongodb/esme_data/sensors.json
+	@cp generate_data/output/sensors.sql.dump esme_postgresql/data/sensors.sql.dump
