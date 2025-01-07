@@ -1,20 +1,40 @@
 # final-lab
 
+# Clone the repository
+
+```bash
+git clone https://github.com/Esme-Sudria-Database/final-lab.git
+cd final-lab
+```
+
 ## How to interact with the lab
+
 ### Run the lab
-- `make start`
+
+```bash
+make start
+```
 
 ### Populate the databases
-- `make populate-pg`
-- `make populate-mongo`
+
+```bash
+make populate-pg
+make populate-mongo
+```
 
 > You need to run these two commands to have the data into each database
 
 ### Stop the lab
-- `make stop`
+
+```bash
+make stop
+```
 
 ### Get the Jupyter token
-- `make get-jupyter-token`
+
+```bash
+make get-jupyter-token
+```
 
 > You need the token to access the Jupyter notebook
 
