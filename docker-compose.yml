@@ -10,6 +10,8 @@ services:
     volumes:
       - /var/lib/postgresql
       - ./esme_postgresql/data:/data
+    networks:
+      - esme_network
 
   esme_pgadmin:
     build:
@@ -47,3 +49,9 @@ services:
     ports:
       - "8888:8888"
       - "4040:4040"
+    networks:
+      - esme_network
+
+networks:
+  esme_network:
+    driver: bridge

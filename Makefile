@@ -7,10 +7,14 @@ help: ## Show this help message
 	@echo "Docker commands:"
 	@echo "  start           Start all containers"
 	@echo "  stop            Stop all containers"
+	@echo "  populate-pg     Populate the PostgreSQL database"
+	@echo "  populate-mongo  Populate the MongoDB database"
+	@echo "  get-jupyter-token  Get the Jupyter token from the docker logs"
 	@echo ""
 	@echo "Utility commands:"
 	@echo "  print           Print a hello message"
 	@echo "  help            Show this help message"
+	@echo "  generate-data   Generate data for the pgsql database"
 	@echo ""
 
 
