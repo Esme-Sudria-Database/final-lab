@@ -25,7 +25,11 @@ stop: ## Stop all containers
 
 .PHONY: populate-pg
 populate-pg: ## Populate the PostgreSQL database
-	docker compose exec -it -e POSTGRES_USER=postgres esme_postgresql /data/load_dumps.sh
+	docker compose exec -it esme_postgresql /data/load_dumps.sh
+
+.PHONY: populate-mongo
+populate-mongo: ## Populate the MongoDB database
+	docker compose exec -it esme_mongodb /esme_data/mongoimport.sh
 
 ##@ Utility commands
 .PHONY: print

@@ -1,1 +1,14 @@
 # final-lab
+
+## How to interact with the lab
+### Run the lab
+- `make start`
+
+### Populate the databases
+- `make populate-pg`
+- `make populate-mongo`
+
+> You need to run these two commands to have the data into each database
+
+### Stop the lab
+- `make stop`
