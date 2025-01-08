@@ -23,6 +23,8 @@ services:
       - PGADMIN_DEFAULT_PASSWORD=admin
     volumes:
       - /var/lib/pgadmin
+    networks:
+      - esme_network
 
   esme_mongodb:
     build:
